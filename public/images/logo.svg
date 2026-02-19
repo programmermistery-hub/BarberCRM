@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="The Lord Barber">
+  <rect width="100%" height="100%" fill="#0f172a" rx="24" />
+  <g transform="translate(64 64) scale(0.75)">
+    <circle cx="192" cy="128" r="96" fill="#f8fafc" />
+    <rect x="128" y="232" width="128" height="48" rx="8" fill="#f8fafc" />
+    <path d="M160 80c0-22 40-40 64-40s64 18 64 40" stroke="#0f172a" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <text x="192" y="400" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="48" fill="#f8fafc">THE LORD</text>
+  </g>
+</svg>
