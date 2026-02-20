@@ -50,6 +50,12 @@ export default function TimerOutPage() {
     return "bg-[oklch(0.55_0.15_155)] text-[oklch(0.95_0_0)]"
   }
 
+  function makeWhatsAppLink(number: string) {
+    const sanitized = number.replace(/\D/g, "")
+    const text = encodeURIComponent("olá, como vai?")
+    return `https://wa.me/${sanitized}?text=${text}`
+  }
+
   return (
     <main className="min-h-screen bg-background flex flex-col">
       {/* Header */}
@@ -131,9 +137,14 @@ export default function TimerOutPage() {
                   {entry.numero && (
                     <div className="flex items-center gap-2">
                       <Phone className="h-3.5 w-3.5 text-muted-foreground flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">
+                      <a
+                        href={makeWhatsAppLink(entry.numero)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-muted-foreground hover:underline truncate"
+                      >
                         {entry.numero}
-                      </span>
+                      </a>
                     </div>
                   )}
                 </div>
